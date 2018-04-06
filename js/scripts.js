@@ -8,6 +8,8 @@ function player (name, score) {
 }
 
 
+
+
  var totalDice = [];
 
  function roll() {
@@ -18,14 +20,13 @@ function player (name, score) {
 
 }
 
-roll();
-roll();
-roll();
+
+
 
 var sum = 0;
  for (var i = 0; i < totalDice.length; i++) {
-   console.log(totalDice[i]);
    sum += totalDice[i];
  }
+
 
 console.log(sum);
