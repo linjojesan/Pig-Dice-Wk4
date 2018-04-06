@@ -6,11 +6,7 @@ function player (name, score) {
   this.totalScore = score;
 
 }
-
-
-
-
- var totalDice = [];
+  var totalDice = [];
 
  function roll() {
 
@@ -22,11 +18,19 @@ function player (name, score) {
 
 
 
-
-var sum = 0;
+function calculateSum() {
+  var sum = 0;
  for (var i = 0; i < totalDice.length; i++) {
    sum += totalDice[i];
+
+
+
  }
+ return roll()
 
 
-console.log(sum);
+
+};
+
+
+console.log((calculateSum()));
